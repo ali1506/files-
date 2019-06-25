@@ -1,0 +1,11 @@
+from json2html import *
+import urllib.request
+wp = urllib.request.urlopen("http://google.com")
+pw = wp.read()
+m=json2html.convert(json = pw)
+file = open("C:/my_code/test.txt","w")
+file.write(m)
+file.close()
+
+--- this is python scripts for grab the data from api and save it in the txt file and working with it again ---
+----- useful for the api i mean drescher and then compare with it ----------------------------------
